@@ -1,0 +1,40 @@
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    
+}
+
+.screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 212 px;
+    height: 70px;
+    text-align: right;
+    border: 1px solid grey;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+
+button {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    margin-bottom: 4px;
+}
+.previous,.current {
+    /* border: 1px solid black; */
+    width: 200px;
+    height: 30px;
+}
+
+.previous {
+    font-size: smaller;
+}

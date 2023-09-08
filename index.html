@@ -5,9 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    
+    <div class="flex-container">
+        <div class="content">
+            <div class="screen">
+                <div class="previous"></div>
+                <div class="current"></div>
+            </div>
+            <div class="keys">
+                <div>
+
+                    <button onclick="setZero()" type="button">AC</button>
+                    <button class="clear" type="button">C</button>
+                    <button class="operator" value="√" type="button">√</button>
+                    <button class="operator" value="%" type="button">%</button>
+                </div>
+                <div>
+
+                    <button class="num" value="2" type="button">2</button>
+                    <button class="num" value="3" type="button">3</button>
+                    <button class="num" value="1" type="button">1</button>
+                    <button class="operator" value="+" type="button">+</button>
+                </div>
+                <div>
+
+                    <button class="num" value="4" type="button">4</button>
+                    <button class="num" value="5" type="button">5</button>
+                    <button class="num" value="6" type="button">6</button>
+                    <button class="operator" value="-" type="button">-</button>
+
+                </div>
+                <div>
+                    <button class="num" value="7" type="button">7</button>
+                    <button class="num" value="8" type="button">8</button>
+                    <button class="num" value="9" type="button">9</button>
+                    <button class="operator" value="x" type="button">x</button>
+                </div>
+                 <div>
+                    <button class="num" value="0" type="button">0</button>
+                    <button value="." type="button">.</button>
+                    <button class="equal" type="button">=</button>
+                    <button class="operator" value="÷" type="button">÷</button>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
