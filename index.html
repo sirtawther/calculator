@@ -19,14 +19,14 @@
 
                     <button onclick="setZero()" type="button">AC</button>
                     <button class="clear" type="button">C</button>
-                    <button class="operator" value="√" type="button">√</button>
-                    <button class="operator" value="%" type="button">%</button>
+                    <button class="sqrt" value="√" type="button">√</button>
+                    <button class="percent" value="%" type="button">%</button>
                 </div>
                 <div>
-
+                    
+                    <button class="num" value="1" type="button">1</button>
                     <button class="num" value="2" type="button">2</button>
                     <button class="num" value="3" type="button">3</button>
-                    <button class="num" value="1" type="button">1</button>
                     <button class="operator" value="+" type="button">+</button>
                 </div>
                 <div>
@@ -45,7 +45,7 @@
                 </div>
                  <div>
                     <button class="num" value="0" type="button">0</button>
-                    <button value="." type="button">.</button>
+                    <button pattern="\d+\.?\d?(?!\d)" class="dot" value="." type="button">.</button>
                     <button class="equal" type="button">=</button>
                     <button class="operator" value="÷" type="button">÷</button>
 
