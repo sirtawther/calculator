@@ -8,12 +8,17 @@ let currentScreen = document.querySelector(".current");
 let previousScreen = document.querySelector(".previous");
 let equal = document.querySelector(".equal");
 
+
+
 nums.forEach((num) =>
   num.addEventListener("click", () => {
-    
-    currentValue += num.value;
-
+    if (currentValue =="0") {
+      currentScreen.textContent = ""
+      currentValue = ""
+    }
     if (currentValue.length <= 10) {
+      currentValue += num.value;
+      
       currentScreen.textContent += num.value;
     }
   })
@@ -58,7 +63,7 @@ clear.addEventListener("click", () => {
 })
 
 function setZero() {
-    currentValue = ""
+    currentValue = "0"
     previousValue = ""
     currentScreen.textContent = "0"
     previousScreen.textContent = ""
