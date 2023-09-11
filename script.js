@@ -10,7 +10,7 @@ let equal = document.querySelector(".equal");
 
 nums.forEach((num) =>
   num.addEventListener("click", () => {
-    currentScreen.textContent = ""
+    
     currentValue += num.value;
 
     if (currentValue.length <= 10) {
