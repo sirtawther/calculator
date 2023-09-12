@@ -9,7 +9,7 @@ let previousScreen = document.querySelector(".previous");
 let equal = document.querySelector(".equal");
 let dot = document.querySelector(".dot");
 let percent = document.querySelector(".percent");
-let squareRoot = document.querySelector(".sqrt")
+let squareRoot = document.querySelector(".sqrt");
 
 percent.addEventListener("click", () => {
   if (previousValue == "") {
@@ -18,14 +18,11 @@ percent.addEventListener("click", () => {
     currentValue = currentValue * ((1 / 100) * 100);
   }
   currentScreen.textContent += percent.value;
-
 });
 
 squareRoot.addEventListener("click", () => {
-
-
-  currentValue = Math.sqrt(currentValue)
-  currentScreen.textContent = currentValue
+  currentValue = Math.sqrt(currentValue);
+  currentScreen.textContent = currentValue;
 });
 dot.addEventListener("click", () => {
   currentValue = currentValue + dot.value;
@@ -94,4 +91,3 @@ function setZero() {
   currentScreen.textContent = "0";
   previousScreen.textContent = "";
 }
-
